@@ -1,0 +1,77 @@
+<mjml>
+  <mj-head>
+    <mj-attributes>
+      <mj-all font-family="'Open Sans', OpenSans, Helvetica, Tahoma, Arial, sans-serif" />
+      <mj-body background-color="#F9F9F9" />
+      <mj-section padding="0" />
+      <mj-column padding="0" />
+      <mj-text font-size="14px" color="#4F4F4F" line-height="20px" padding="0" />
+      <mj-image padding="0" />
+    </mj-attributes>
+    <mj-style inline="inline">
+      table {
+        border-spacing: 0;
+      }
+
+      td {
+        padding: 0;
+      }
+
+      .mj-body {}
+
+      .root-wrap {
+        width: 600px !important !important;
+        margin: 0 auto;
+      }
+
+      .cell {
+        width: 600px !important !important;
+        margin: 0 auto;
+      }
+
+      .img-wrap img {
+        width: 100% !important !important;
+        height: auto !important !important;
+      }
+
+      .font-family,
+      .font-family div,
+      .font-family p,
+      .font-family td,
+      .font-family span,
+      .font-family a {
+        font-family: 'Open Sans', OpenSans, Helvetica, Tahoma, Arial, sans-serif;
+      }
+    </mj-style>
+  </mj-head>
+  <mj-body css-class="cell mj-body" width="600px">
+    <mj-raw>
+      <table class="root-wrap cell">
+        <tr>
+          <td>
+    </mj-raw>
+    <mj-wrapper css-class="mj-wrapper" padding="0">
+      <!-- Subtitle -->
+      <mj-include path="./components/subtitle.mjml" />
+
+      <!-- Content Start -->
+
+      <!-- Logo -->
+      <mj-include path="./components/logo.mjml" />
+
+      <!-- Coupon Image -->
+      <mj-include path="./components/coupon-img.mjml" />
+
+      <!-- Content End -->
+
+    </mj-wrapper>
+    <!-- Footer -->
+    <mj-include path="./components/footer.mjml" />
+
+    <mj-raw>
+      </td>
+      </tr>
+      </table>
+    </mj-raw>
+  </mj-body>
+</mjml>

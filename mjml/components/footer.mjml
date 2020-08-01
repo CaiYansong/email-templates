@@ -1,0 +1,24 @@
+<mjml>
+  <mj-head>
+    <mj-attributes>
+    </mj-attributes>
+
+    <mj-style inline="inline">
+      .cell {
+        width: 600px !important !important;
+        margin: 0 auto;
+      }
+    </mj-style>
+
+  </mj-head>
+
+  <mj-body>
+    <mj-section padding="32px 0" css-class="cell" background-color="#fff">
+      <mj-column css-class="logo-wrap cell" padding="0">
+        <mj-text>
+          footer
+        </mj-text>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>

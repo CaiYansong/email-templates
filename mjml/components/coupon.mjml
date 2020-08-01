@@ -1,0 +1,105 @@
+<mjml>
+  <mj-head>
+    <mj-attributes>
+    </mj-attributes>
+
+    <mj-style inline="inline">
+      .cell {
+        width: 600px !important !important;
+        margin: 0 auto;
+      }
+
+      /* Coupon Image */
+      .coupon-link {
+        text-decoration: none;
+      }
+
+      .coupon-wrap {
+        width: 520px;
+        height: 130px;
+        margin: 0 auto;
+        border-collapse: collapse;
+        border-spacing: 0px;
+        background: url(https://ae01.alicdn.com/kf/H54db7085a7244940871aace55d637df97.png) no-repeat;
+        background-size: 100% 100%;
+      }
+
+      .coupon-price,
+      .coupon-order-over,
+      .coupon-valid-period,
+      .get-coupon {
+        font-family: 'Open Sans', OpenSans, Helvetica, Tahoma, Arial, sans-serif;
+      }
+
+      .coupon-price,
+      .coupon-order-over,
+      .coupon-valid-period {
+        padding-left: 16px;
+        text-align: left;
+        color: #fff;
+      }
+
+      .coupon-price {
+        line-height: 46px;
+        font-size: 34px;
+        font-weight: 700;
+      }
+
+      .coupon-order-over {
+        line-height: 22px;
+        font-size: 15px;
+      }
+
+      .coupon-valid-period {
+        line-height: 22px;
+        font-size: 15px;
+      }
+
+      .get-coupon {
+        margin-right: 16px;
+        padding: 8px;
+        border-radius: 46px;
+        line-height: 30px;
+        font-size: 19px;
+        font-weight: 600;
+        background-color: #fff;
+        color: #000;
+      }
+    </mj-style>
+
+  </mj-head>
+
+  <mj-body>
+    <!-- Coupon -->
+    <mj-section css-class="cell" padding="1px 20px 1px">
+      <mj-column css-class="mj-column" padding="20px">
+        <mj-text align="center">
+          <a class="coupon-link" href="$!{couponLink}" target="_blank">
+            <table class="coupon-wrap">
+              <tr>
+                <td>
+                  <div>
+                    <div class="coupon-price">
+                      $!{couponPrice}
+                    </div>
+                    <div class="coupon-order-over">
+                      $!{couponOrderOver}
+                    </div>
+                    <div class="coupon-valid-period">
+                      $!{couponValidPeriod}
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="get-coupon">
+                    $!{getCoupon}
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </a>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>

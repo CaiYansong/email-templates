@@ -1,0 +1,44 @@
+<mjml>
+  <mj-head>
+    <mj-attributes>
+    </mj-attributes>
+
+    <mj-style inline="inline">
+      .cell {
+        width: 600px !important !important;
+        margin: 0 auto;
+      }
+
+      /* Coupon Image */
+      .coupon-img-link {
+        display: block;
+        height: 130px;
+        margin: 0 auto;
+        text-decoration: none;
+        font-size: 0;
+        word-break: keep-all;
+        white-space: nowrap;
+      }
+
+      .coupon-img-left,
+      .coupon-img-right {
+        height: 130px;
+      }
+    </mj-style>
+
+  </mj-head>
+
+  <mj-body>
+    <!-- Coupon -->
+    <mj-section css-class="cell" padding="1px 20px 1px">
+      <mj-column css-class="mj-column" padding="20px">
+        <mj-text align="center">
+          <a class="coupon-img-link" href="$!{couponLink}" target="_blank">
+            <!-- 一定要连着写，否则在Gmail客户端上会出现间隙 -->
+            <img class="coupon-img-left" src="$!{couponLeftImg}" alt="" /><img class="coupon-img-right" src="$!{couponRightImg}" alt="" />
+          </a>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>

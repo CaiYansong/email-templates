@@ -1,0 +1,35 @@
+<mjml>
+  <mj-head>
+    <mj-attributes>
+    </mj-attributes>
+
+    <mj-style inline="inline">
+      .subTitle-section {
+        width: 0;
+        height: 0;
+      }
+
+      .subTitle {
+        width: 0;
+        height: 0;
+        font-size: 1px;
+        font-family: 'Open Sans', OpenSans, Helvetica, Tahoma, Arial, sans-serif;
+        line-height: 1px;
+        overflow: hidden;
+      }
+    </mj-style>
+
+  </mj-head>
+
+  <mj-body>
+    <mj-section padding="0" css-class="subTitle-section">
+      <mj-column padding="0">
+        <mj-text padding="0">
+          <div class="subTitle">
+            $!{subtitle}
+          </div>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>

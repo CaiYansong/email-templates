@@ -1,0 +1,21 @@
+<mjml>
+  <mj-head>
+    <mj-attributes>
+    </mj-attributes>
+
+    <mj-style inline="inline">
+
+    </mj-style>
+
+  </mj-head>
+
+  <mj-body>
+    <mj-section padding="0" css-class="view-more-section">
+      <mj-column padding="0">
+        <mj-button href="$!{viewMoreLink}" padding="0 0 12px" background-color="#E13811" align="center" color="#fff" width="477px" height="58px" font-size="22px" font-weight="700">
+          $!{viewMore}
+        </mj-button>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>

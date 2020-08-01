@@ -1,0 +1,43 @@
+<mjml>
+  <mj-head>
+    <mj-attributes>
+    </mj-attributes>
+
+    <mj-style inline="inline">
+      .cell {
+        width: 600px !important !important;
+        margin: 0 auto;
+      }
+
+      /* Coupon Image */
+
+      .coupon-img-link {
+        display: block;
+        height: 130px;
+        margin: 0 auto;
+        text-decoration: none;
+        font-size: 0;
+        word-break: keep-all;
+        white-space: nowrap;
+      }
+
+      .coupon-img {
+        height: 130px;
+      }
+    </mj-style>
+
+  </mj-head>
+
+  <mj-body>
+    <!-- Coupon -->
+    <mj-section css-class="cell" padding="1px 20px 1px">
+      <mj-column css-class="mj-column" padding="20px">
+        <mj-text align="center">
+          <a class="coupon-img-link" href="$!{couponLink}" target="_blank">
+            <img class="coupon-img" src="$!{couponImg}" alt="" />
+          </a>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>

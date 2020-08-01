@@ -1,0 +1,43 @@
+<mjml>
+  <mj-head>
+    <mj-attributes>
+    </mj-attributes>
+
+    <mj-style inline="inline">
+      .cell {
+        width: 600px !important !important;
+        margin: 0 auto;
+      }
+
+      /* Logo */
+      .logo-wrap {
+        text-align: center !important;
+      }
+
+      .logo-wrap td {
+        text-align: center !important;
+      }
+
+      .logo-wrap a {
+        display: inline-block;
+        text-decoration: none;
+        text-transform: none;
+        vertical-align: middle;
+      }
+
+      .logo img {
+        max-width: 140px;
+        width: 140px !important;
+      }
+    </mj-style>
+
+  </mj-head>
+
+  <mj-body>
+    <mj-section padding="32px 0" css-class="cell" background-color="#fff">
+      <mj-column css-class="logo-wrap cell" padding="0">
+        <mj-image css-class="logo" href="" src="" alt="" align="center" padding="0" width="600px" />
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>

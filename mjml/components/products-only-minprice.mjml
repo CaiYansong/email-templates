@@ -1,0 +1,54 @@
+<mjml>
+  <mj-head>
+    <mj-attributes>
+    </mj-attributes>
+
+    <mj-style inline="inline">
+      .img-wrap img {
+        width: 100% !important !important;
+        height: auto !important !important;
+      }
+
+      .products-wrap {}
+
+      .product-item {
+        width: 180px !important !important;
+        margin: 0 6px;
+        margin-bottom: 10px;
+        border-radius: 16px;
+        background-color: #fff;
+        overflow: hidden;
+      }
+
+      .product-img,
+      .product-img a {
+        display: inline-block;
+        width: 180px;
+        height: 180px;
+        margin: 0 auto;
+        border-radius: 16px;
+        overflow: hidden;
+      }
+    </mj-style>
+
+  </mj-head>
+
+  <mj-body>
+    <mj-section padding="0" css-class="product-cell">
+      <mj-raw>
+        #foreach($p in $recommendItems.get(0))
+        #if($recommendItems.get(0) && $recommendItems.get(0).size() > 0 &&$recommendItems.get(0).size() < 4) <!-- -->
+      </mj-raw>
+      <mj-column css-class="product-item" padding="0">
+        <mj-image css-class="img-wrap product-img" src="$!{p.productImage}" href="$!{p.productDetailUrl}" alt="$!{p.productName}" padding="0" />
+        <mj-text padding="10px" font-size="22px" font-weight="700" font-style="Italic" color="#333">
+          $!{p.minPrice}
+        </mj-text>
+      </mj-column>
+      <mj-raw>
+        #end
+        #end
+      </mj-raw>
+    </mj-section>
+  </mj-body>
+</mjml>

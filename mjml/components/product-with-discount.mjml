@@ -1,0 +1,91 @@
+<mjml>
+  <mj-head>
+    <mj-attributes>
+    </mj-attributes>
+
+    <mj-style inline="inline">
+      .img-wrap img {
+        width: 100% !important !important;
+        height: auto !important !important;
+      }
+
+      .products-wrap {}
+
+      .product-item {
+        width: 160px !important !important;
+        margin: 0 6px;
+        margin-bottom: 8px;
+        padding: 10px;
+        border-radius: 13px;
+        background-color: #fff;
+        overflow: hidden;
+      }
+
+      .product-img,
+      .product-img a {
+        display: inline-block;
+        width: 160px;
+        height: 160px;
+        margin: 0 auto;
+        border-radius: 10px;
+        overflow: hidden;
+      }
+
+      .min-price,
+      .product-discount,
+      .ori-price {
+        font-family: 'Open Sans', OpenSans, Helvetica, Tahoma, Arial, sans-serif;
+      }
+
+      .min-price,
+      .product-discount {
+        margin-top: 6px;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 24px;
+      }
+
+      .product-discount {
+        display: inline-block;
+        padding: 0 6px;
+        border-radius: 7px;
+        background-color: #F8235E;
+        color: #fff;
+      }
+
+      .ori-price {
+        font-size: 16px;
+      }
+    </mj-style>
+
+  </mj-head>
+
+  <mj-body>
+    <mj-section padding="0" css-class="product-cell">
+      <mj-raw>
+        #foreach($p in $recommendItems.get(0))
+        #if($recommendItems.get(0) && $recommendItems.get(0).size() > 0 &&$recommendItems.get(0).size() < 4) <!-- -->
+      </mj-raw>
+      <mj-column css-class="product-item" padding="0">
+        <mj-image css-class="img-wrap product-img" src="$!{p.productImage}" href="$!{p.productDetailUrl}" alt="$!{p.productName}" padding="0" />
+        <mj-text padding="0">
+          <div class="">
+            <span class="min-price">
+              $!{p.minPrice}
+            </span>
+            <span class="product-discount">
+              $!{p.discount}
+            </span>
+          </div>
+          <del class="ori-price">
+            $!{p.oriPrice}
+          </del>
+        </mj-text>
+      </mj-column>
+      <mj-raw>
+        #end
+        #end
+      </mj-raw>
+    </mj-section>
+  </mj-body>
+</mjml>
