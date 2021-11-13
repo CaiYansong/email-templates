@@ -1,4 +1,4 @@
-# email-template
+# email-templates
 
 编译单个文件：
 npx mjml mjml/test.mjml -o build/test.html
